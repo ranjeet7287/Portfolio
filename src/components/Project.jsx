@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import devlinkImg from "../images/devlink.png";
+// import devlinkImg from "../images/devlink.png";
 import youtubeUIImg from "../images/youtubeUI.png";
 import shauryaImg from "../images/shaurya.jpeg";
 
 const Project = () => {
   const projects = [
-    {
-      id: 1,
-      title: "Devlink",
-      description:
-        "A platform that helps people discover each other, collaborate, chat in real-time and user authentication.",
-      image: devlinkImg,
-      tags: ["React", "Node.js", "MongoDB", "Socket.io"],
-      demoLink: "https://devlink.click",
-      githubLink: "https://github.com/harpreet-singh13/devTinder-web",
-    },
+    // {
+    //   id: 1,
+    //   title: "Devlink",
+    //   description:
+    //     "A platform that helps people discover each other, collaborate, chat in real-time and user authentication.",
+    //   image: devlinkImg,
+    //   tags: ["React", "Node.js", "MongoDB", "Socket.io"],
+    //   demoLink: "https://devlink.click",
+    //   githubLink: "https://github.com/harpreet-singh13/devTinder-web",
+    // },
     {
       id: 2,
       title: "Shaurya",
@@ -50,7 +50,7 @@ const Project = () => {
           different challenges and solutions I've implemented.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap gap-5 justify-center">
           {projects.map((project) => (
             <Link
               to={`/project/${project.id}`}
@@ -109,7 +109,7 @@ const Project = () => {
               </div>
             </Link>
           ))}
-        </div>
+        </div>  
 
         {/* <div className="text-center mt-12">
           <a
