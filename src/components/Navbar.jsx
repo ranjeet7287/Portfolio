@@ -44,11 +44,10 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled
           ? "py-3 bg-gray-900/95 backdrop-blur-sm shadow-lg"
           : "py-5 bg-gray-900/95" // Changed from transparent to maintain visibility
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <nav className="flex justify-between items-center relative">
@@ -71,11 +70,10 @@ const Navbar = () => {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className={`px-4 py-2 rounded-lg transition-all duration-300 relative group ${
-                    activeSection === link.href.substring(1)
+                  className={`px-4 py-2 rounded-lg transition-all duration-300 relative group ${activeSection === link.href.substring(1)
                       ? "text-white font-medium"
                       : "text-gray-300 hover:text-white"
-                  }`}
+                    }`}
                 >
                   {link.label}
                   {activeSection === link.href.substring(1) && (
@@ -88,7 +86,7 @@ const Navbar = () => {
 
             <li className="ml-4">
               <a
-                href="https://drive.google.com/file/d/1viFEmHbKtk7CLreNTS2yY8p1r4MYJUUT/view"
+                href="https://drive.google.com/file/d/1iANct9J7mMb4gSOTc36qYF7h9C-sCZZ1/view?usp=sharing"
                 className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md hover:shadow-blue-500/20 transition-all duration-300 text-sm font-medium"
               >
                 Resume
@@ -106,20 +104,18 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <div
-            className={`md:hidden absolute top-full left-0 w-full bg-gray-900/95 backdrop-blur-sm shadow-lg transition-all duration-300 overflow-hidden ${
-              isMenuOpen ? "max-h-96 py-4" : "max-h-0 py-0"
-            }`}
+            className={`md:hidden absolute top-full left-0 w-full bg-gray-900/95 backdrop-blur-sm shadow-lg transition-all duration-300 overflow-hidden ${isMenuOpen ? "max-h-96 py-4" : "max-h-0 py-0"
+              }`}
           >
             <ul className="flex flex-col space-y-4 px-4">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className={`block py-2 transition-colors duration-300 ${
-                      activeSection === link.href.substring(1)
+                    className={`block py-2 transition-colors duration-300 ${activeSection === link.href.substring(1)
                         ? "text-blue-400 font-medium"
                         : "text-gray-300 hover:text-blue-400"
-                    }`}
+                      }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.label}
@@ -128,7 +124,7 @@ const Navbar = () => {
               ))}
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1viFEmHbKtk7CLreNTS2yY8p1r4MYJUUT/view"
+                  href="https://drive.google.com/file/d/1iANct9J7mMb4gSOTc36qYF7h9C-sCZZ1/view?usp=sharing"
                   className="block w-full text-center py-2 px-5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md hover:shadow-blue-500/20 transition-all duration-300 text-sm font-medium mt-2"
                   onClick={() => setIsMenuOpen(false)}
                 >

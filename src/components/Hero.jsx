@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen relative overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white pt-20" // Added pt-20 for padding-top
+      className="min-h-screen relative overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white pt-20"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -17,14 +17,14 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="md:w-3/5 text-center md:text-left">
             <p className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 text-sm font-medium rounded-full mb-6 animate-fade-in">
-              Mobile App Developer
+              Full Stack Developer
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
               Hi, I'm <span className="text-gradient">Ranjeet</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in  animation-delay-300">
-              A passionate developer building robust and user-friendly mobile
-              applications using modern technologies with React Native.
+              A passionate Full Stack Developer building scalable web & mobile
+              applications with React, Next.js, Node.js, and React Native.
             </p>
             <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-4 animate-fade-in  animation-delay-600">
               <a
@@ -61,8 +61,22 @@ const Hero = () => {
               <div className="flex flex-wrap gap-6 animate-fade-in opacity-0 animation-delay-900">
                 <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group">
                   <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                     alt="React"
+                    className="w-6 h-6 group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                    alt="Next.js"
+                    className="w-6 h-6 group-hover:scale-110 transition-transform duration-300 invert"
+                  />
+                </div>
+                <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    alt="Node.js"
                     className="w-6 h-6 group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
@@ -75,15 +89,15 @@ const Hero = () => {
                 </div>
                 <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group">
                   <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                    alt="Node.js"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                    alt="PostgreSQL"
                     className="w-6 h-6 group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
                 <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group">
                   <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg"
-                    alt="MongoDB"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                    alt="Docker"
                     className="w-6 h-6 group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>

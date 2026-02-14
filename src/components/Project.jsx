@@ -22,7 +22,7 @@ const Project = () => {
       description:
         "Shaurya: India’s first app combining learning, earning, and exam prep—helping students succeed in competitive exams with real rewards.",
       image: shauryaImg,
-      tags: ["React.js", "Redux", "Tailwind CSS", "Firebase"],
+      tags: ["React Native", "React.js", "Node.js", "PostgreSQL", "Redis"],
       demoLink:
         "https://play.google.com/store/apps/details?id=com.shauryaTS&pcampaignid=",
       //githubLink: "",
@@ -109,7 +109,7 @@ const Project = () => {
               </div>
             </Link>
           ))}
-        </div>  
+        </div>
 
         {/* <div className="text-center mt-12">
           <a

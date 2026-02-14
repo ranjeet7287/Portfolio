@@ -4,25 +4,25 @@ const About = () => {
   // Data for the experience timeline
   const experiences = [
     {
-      year: "Jan 2024 - Present",
-      role: "Software Developer",
-      company: "Shaurya TS",
+      year: "Apr 2025 - Present",
+      role: "Software Developer — Full Stack",
+      company: "ClearCatNet",
       description:
-        "Designed and developed cross-platform mobile applications using React Native with a Django backend.",
+        "Led end-to-end development of Learnees EdTech platform, delivering production-ready MVP in 4 months by managing a team of 3 developers. Architected scalable full-stack system with Node.js/Express/PostgreSQL backend, Next.js frontend, and React.js admin panel.",
+    },
+    {
+      year: "Jan 2024 - Mar 2025",
+      role: "Software Developer — Mobile & Backend",
+      company: "Shauryats Solutions Pvt. Ltd",
+      description:
+        "Architected and deployed a full-stack EdTech platform achieving 100K+ downloads with 7K peak concurrent users. Built production-grade React.js web app and cross-platform React Native mobile app with complete CI/CD pipeline.",
     },
     {
       year: "Sept 2023 - Dec 2023",
-      role: "Intern",
-      company: "Shaurya TS",
+      role: "Software Developer Intern — Mobile & Backend",
+      company: "Shauryats Solutions Pvt. Ltd",
       description:
-        "Specialized in designing interactive, user-friendly React Native mobile UI/UX for seamless, high-performance cross-platform apps.",
-    },
-    {
-      year: "Mar 2022 - Sep 2023",
-      role: "Freelancer",
-      company: "Self-Employed",
-      description:
-        "Provided end-to-end React Native development services for clients, focusing on building intuitive, high-performance cross-platform mobile apps.",
+        "Designed normalized PostgreSQL database schema for exam analytics, improving query performance by 50%. Built competitive features including tournament leaderboards and analytics dashboard.",
     },
   ];
 
@@ -77,27 +77,55 @@ const About = () => {
           {/* About Text Content */}
           <div className="w-full md:w-3/5 lg:w-2/3 space-y-4 text-gray-700">
             <p className="text-lg">
-              Experienced Full Stack Developer skilled in React, Django, with
-              proven impact (20,000 app downloads, 90% positive reviews), eager
-              to advance backend expertise. Proficient in JavaScript frameworks,
-              RESTful APIs, and state management. Committed to clean code, CI/CD
-              practices, and responsive UIs for enhanced user engagement. Eager
-              to leverage extensive frontend knowledge and further develop
-              backend skills in a challenging role
+              Full Stack Developer with hands-on experience building and
+              deploying production-grade web and mobile applications. I've
+              successfully delivered 3 production applications from scratch,
+              collectively serving 100K+ users with 99.5%+ uptime. Skilled in
+              JavaScript, React, Next.js, Node.js, React Native, and
+              Python/Django with strong expertise in system design, database
+              architecture, and agile development.
             </p>
             <p className="text-lg">
               Proficient in optimizing frontend performance through techniques
               such as code splitting, lazy loading, and reusable component
-              libraries, which have significantly reduced development time and
-              improved user experience. Experienced in implementing CI/CD
-              practices and real-time error monitoring using tools like Sentry
-              to accelerate bug identification and resolution.
+              libraries — achieving 90+ Lighthouse scores and improving page
+              load times by 60%. Experienced in implementing CI/CD pipelines,
+              WebSocket-based real-time systems, and Redis caching to reduce
+              system latency by 40%.
             </p>
             <p className="text-lg">
-              When I'm not coding, you can find me exploring new technologies,
-              contributing to open-source projects, or sharing my knowledge
-              through technical writing.
+              When I'm not coding, you can find me solving DSA problems on
+              Coding Ninjas (300+ solved), exploring new technologies, or
+              mentoring team members on development best practices.
             </p>
+
+            {/* Education */}
+            <div className="pt-4">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 mr-2 text-blue-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                  />
+                </svg>
+                Education
+              </h3>
+              <div className="bg-blue-50 rounded-lg p-4">
+                <h4 className="font-bold text-gray-800">B.Tech in Computer Science Engineering</h4>
+                <p className="text-gray-600 text-sm">Shri Venkateshwara University, Uttar Pradesh</p>
+                <p className="text-blue-600 text-sm font-medium">April 2021 – April 2025</p>
+              </div>
+            </div>
 
             {/* Skills Tags */}
             <div className="pt-6">
@@ -120,16 +148,19 @@ const About = () => {
               </h3>
               <div className="flex flex-wrap gap-2 mt-3">
                 <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                  React Native (iOS/Android)
+                  JavaScript (ES6+)
                 </span>
                 <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                  React
+                  React.js
                 </span>
                 <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                  JavaScript
+                  Next.js
                 </span>
                 <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                  Android Studio
+                  React Native
+                </span>
+                <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                  Node.js (Express)
                 </span>
                 <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
                   Python
@@ -138,10 +169,10 @@ const About = () => {
                   Django
                 </span>
                 <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                  Redux
+                  PostgreSQL
                 </span>
                 <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                  Firebase
+                  Redis
                 </span>
                 <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
                   Docker

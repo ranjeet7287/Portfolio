@@ -5,28 +5,31 @@ const Skills = () => {
 
   const skillsData = {
     frontend: [
+      { name: "React.js", proficiency: 90 },
+      { name: "Next.js", proficiency: 85 },
       { name: "React Native", proficiency: 90 },
-      { name: "React JS", proficiency: 88 },
-      { name: "JavaScript", proficiency: 85 },
-      { name: "TypeScript", proficiency: 80 },
+      { name: "JavaScript (ES6+)", proficiency: 88 },
       { name: "Tailwind CSS", proficiency: 85 },
-      { name: "Redux", proficiency: 82 },
+      { name: "HTML5 / CSS3", proficiency: 88 },
     ],
     backend: [
-      { name: "Python", proficiency: 84 },
-      { name: "Django", proficiency: 86 },
-      { name: "MongoDB", proficiency: 83 },
-      { name: "PostgreSQL", proficiency: 80 },
-      { name: "RESTful APIs", proficiency: 87 },
-      { name: "GraphQL", proficiency: 75 },
+      { name: "Node.js (Express)", proficiency: 86 },
+      { name: "Python", proficiency: 82 },
+      { name: "Django", proficiency: 84 },
+      { name: "PostgreSQL", proficiency: 85 },
+      { name: "MySQL", proficiency: 80 },
+      { name: "RESTful APIs", proficiency: 88 },
     ],
     devops: [
-      { name: "Google Play Console", proficiency: 81 },
-      { name: "Firebase", proficiency: 79 },
-      { name: "CI/CD", proficiency: 79 },
-      { name: "Git", proficiency: 88 },
-      { name: "Docker", proficiency: 77 },
-      { name: "Android Studio", proficiency: 75 },
+      { name: "Git", proficiency: 90 },
+      { name: "Docker", proficiency: 78 },
+      { name: "CI/CD", proficiency: 82 },
+      { name: "Redis", proficiency: 80 },
+      { name: "WebSockets", proficiency: 82 },
+      { name: "Jira", proficiency: 85 },
+      { name: "Jest", proficiency: 78 },
+      { name: "Google Play Console", proficiency: 83 },
+      { name: "Plesk Obsidian", proficiency: 80 },
     ],
   };
 
@@ -46,31 +49,28 @@ const Skills = () => {
           <div className="inline-flex rounded-md shadow-sm bg-white p-1">
             <button
               onClick={() => setActiveTab("frontend")}
-              className={`px-6 py-3 text-sm font-medium rounded-md transition-colors duration-200 ${
-                activeTab === "frontend"
+              className={`px-6 py-3 text-sm font-medium rounded-md transition-colors duration-200 ${activeTab === "frontend"
                   ? "bg-blue-600 text-white"
                   : "text-gray-700 hover:bg-gray-100"
-              }`}
+                }`}
             >
               Frontend
             </button>
             <button
               onClick={() => setActiveTab("backend")}
-              className={`px-6 py-3 text-sm font-medium rounded-md transition-colors duration-200 ${
-                activeTab === "backend"
+              className={`px-6 py-3 text-sm font-medium rounded-md transition-colors duration-200 ${activeTab === "backend"
                   ? "bg-blue-600 text-white"
                   : "text-gray-700 hover:bg-gray-100"
-              }`}
+                }`}
             >
               Backend
             </button>
             <button
               onClick={() => setActiveTab("devops")}
-              className={`px-6 py-3 text-sm font-medium rounded-md transition-colors duration-200 ${
-                activeTab === "devops"
+              className={`px-6 py-3 text-sm font-medium rounded-md transition-colors duration-200 ${activeTab === "devops"
                   ? "bg-blue-600 text-white"
                   : "text-gray-700 hover:bg-gray-100"
-              }`}
+                }`}
             >
               DevOps & Tools
             </button>
@@ -89,9 +89,6 @@ const Skills = () => {
                   <h4 className="text-lg font-medium text-gray-800">
                     {skill.name}
                   </h4>
-                  {/* <span className="text-blue-600 font-semibold">
-                    {skill.proficiency}%
-                  </span> */}
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
                   <div
@@ -107,32 +104,32 @@ const Skills = () => {
         {/* Additional Skills Summary */}
         <div className="mt-16 text-center">
           <h3 className="text-xl font-bold mb-6 text-gray-800">
-            Additional Skills
+            Core Competencies
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
-              Responsive Design
+              System Design
             </span>
             <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
-              UI/UX Fundamentals
+              Data Structures & Algorithms
+            </span>
+            <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
+              Database Design
+            </span>
+            <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
+              RESTful APIs
+            </span>
+            <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
+              Agile Development
             </span>
             <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
               Performance Optimization
             </span>
             <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
-              SEO Basics
+              Team Leadership
             </span>
             <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
-              Agile Methodology
-            </span>
-            <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
-              Problem Solving
-            </span>
-            <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
-              Team Collaboration
-            </span>
-            <span className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium shadow-sm">
-              Project Management
+              CI/CD Pipelines
             </span>
           </div>
         </div>

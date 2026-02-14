@@ -57,10 +57,11 @@ const ProjectDetails = () => {
       image: shauryaImg,
       tags: [
         "React Native",
-        "Math JS",
-        "Stylesheet",
-        "Firebase",
-        "Animated UI",
+        "React.js",
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "WebSockets",
       ],
       demoLink:
         "https://play.google.com/store/apps/details?id=com.shauryaTS&pcampaignid=",

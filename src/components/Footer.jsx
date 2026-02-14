@@ -13,8 +13,8 @@ const Footer = () => {
               Dev<span className="text-blue-400">Portfolio</span>
             </h3>
             <p className="text-gray-400 mb-6 max-w-md">
-              A passionate developer building robust and user-friendly mobile
-              applications using modern technologies with React Native.
+              A passionate Full Stack Developer building scalable web & mobile
+              applications with React, Next.js, Node.js, and React Native.
             </p>
           </div>
 
@@ -129,7 +129,7 @@ const Footer = () => {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>New Delhi, India</span>
+                <span>Lucknow, India</span>
               </li>
             </ul>
           </div>
